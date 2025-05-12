@@ -1,0 +1,9 @@
+---
+import Layout from '../components/Layout.astro'
+import Game from '../components/Game'
+import "../styles/global.css";
+---
+
+<Layout>
+    <Game client:only="react" />
+</Layout>

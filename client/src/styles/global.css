@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+#app canvas {
+    height: 100vh;
+    aspect-ratio: 4/3;
+    image-rendering: pixelated;
+    
+}
