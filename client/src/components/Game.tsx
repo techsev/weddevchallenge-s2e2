@@ -197,7 +197,7 @@ const Main = () => {
           }}
           onClick={handlePlay}
         >
-          Play {status}
+          Click here to Start
         </button>
       </div>
 
@@ -220,6 +220,27 @@ const Main = () => {
           }}
         >
           Correct Player: {correctPlayer}
+        </h1>
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          top: '4vh',
+          right: '4vh',
+          display: ['waiting', 'playing', 'guessed'].includes(status)
+            ? 'flex'
+            : 'flex'
+        }}
+      >
+        <h1
+          style={{
+            color: 'white',
+            fontSize: '32px',
+            textAlign: 'right',
+            filter: 'drop-shadow(0 0 5px black)'
+          }}
+        >
+          Current Song Speed: {currentPlaybackRate * 100}%
         </h1>
       </div>
     </div>
